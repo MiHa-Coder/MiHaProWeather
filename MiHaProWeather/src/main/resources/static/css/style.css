@@ -1,0 +1,107 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(0, 81, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.container{
+    background-color: rgba(0, 81, 255, 0.623);
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+header{
+    background-color: rgba(0, 81, 255, 0.158);
+    text-align: center;
+}
+
+main{
+    height: 400px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+h2.city {
+    color: white;
+    background-color: rgba(0, 17, 255, 0.651);
+    text-align: center;
+    font-size: 30px;
+}
+
+tr, th{
+    color: white;
+}
+
+div.table_container{
+    background-color: rgba(0, 17, 255, 0.171);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+table.main_weather{
+    table-layout: fixed;
+    height: 320px;
+    width: 300px;
+    border: 5px;
+    border-color: cyan;
+}
+
+th.temp{
+    font-size: 50px;
+}
+
+th.feels_like{
+    font-size: 24px;
+}
+
+table.min_weather{
+    table-layout: fixed;
+    height: 320px;
+    width: 300px;
+    border: 5px;
+    border-color: cyan;
+}
+
+table.min_weather th{
+    text-align: left;
+}
+
+table.sunrise{
+    margin-left: 50px;
+}
+
+table.sunset{
+    margin-left: 25px;
+}
+
+table.sunrise, table.sunset{
+    table-layout: fixed;
+    width: 150px;
+    background-color: rgba(175, 238, 238, 0.329);
+    text-align: center;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header h1{
+    font-family: fantasy, serif;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiHaPro Weather v1.00</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body th:style="'background-image:url('+ ${background_image} +');'">
+
+    <div class="container">
+
+        <header>
+            <h1>MiHaPro Weather</h1>
+        </header>
+
+        <main>
+
+            <div>
+                <h2 class="city" th:text="${city_name} + ' Current Conditions'" />
+            </div>
+
+            <div class="table_container">
+
+                <table class="main_weather">
+                    <tr>
+                        <th><img th:src="${weather_icon}" alt="weather_icon.png"></th>
+                    </tr>
+                    <tr>
+                        <th class="temp" th:text="${temperature} + ' °C'"></th>
+                    </tr>
+                    <tr>
+                        <th class="feels_like" th:text="'FEELS LIKE: ' + ${feels_like} + ' °C'" />
+                    </tr>
+                </table>
+
+                <table class="min_weather">
+                    <tr>
+                        <th th:text="'Pressure: ' + ${pressure} + ' hPa'" />
+                    </tr>
+                    <tr>
+                        <th th:text="'Humidity: ' + ${humidity} + ' %'" />
+                    </tr>
+                    <tr>
+                        <th th:text="'Visibility: ' + ${visibility} + ' m'" />
+                    </tr>
+                    <tr>
+                        <th th:text="'Wind Speed: ' + ${wind_speed} + ' km/h'" />
+                    </tr>
+                    <tr>
+                        <th th:text="'Wind Direction: ' + ${wind_direction}" />
+                    </tr>
+                </table>
+
+                <table class="sunrise">
+                    <tr>
+                        <th th:text="'SUNRISE: ' + ${sunrise}" />
+                    </tr>
+                </table>
+
+                <table class="sunset">
+                    <tr>
+                        <th th:text="'SUNSET: ' + ${sunset}" />
+                    </tr>
+                </table>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>MiHaPro Weather v1.00 - MiHaPro 07/2020</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
