@@ -4,6 +4,7 @@
 
 <p>
 This is a web application project made only for demonstration purposes.
+  (Java, Spring Boot, Thymeleaf, Json, SQL - Postgres, Html, Css)
 
 
 In further work will be done:
